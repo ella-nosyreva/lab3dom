@@ -8,7 +8,7 @@ void task_10();
 int main() {
     setlocale(LC_CTYPE, "RUS");
     task_10();
-    system("pause"); // задержки экрана
+    system("pause"); // Г§Г Г¤ГҐДџГ¦ГЄГЁ Д±ГЄДџГ Г­Г 
     return 0;
 }
 
@@ -17,18 +17,17 @@ void task_10() {
     int curr_day, curr_month, curr_year;
     int age;
 
-    puts("Введите дату рождения (ДД ММ ГГГГ):");
+    puts("Г‚ГўГҐГ¤ГЁГІГҐ Г¤Г ГІГі ДџГ®Г¦Г¤ГҐГ­ГЁГї (Г„Г„ ГЊГЊ ГѓГѓГѓГѓ):");
     scanf("%d %d %d", &birth_day, &birth_month, &birth_year);
 
-    puts("Введите текущую дату (ДД ММ ГГГГ):");
+    puts("Г‚ГўГҐГ¤ГЁГІГҐ ГІГҐГЄГіГ№ГіЕџ Г¤Г ГІГі (Г„Г„ ГЊГЊ ГѓГѓГѓГѓ):");
     scanf("%d %d %d", &curr_day, &curr_month, &curr_year);
 
     age = curr_year - birth_year;
 
-    // Проверка: если день рождения в этом году еще не наступил, вычитаем 1 год
     if (curr_month < birth_month || (curr_month == birth_month && curr_day < birth_day)) {
         age = age - 1;
     }
 
-    printf("Возраст: %d лет\n", age);
+    printf("Г‚Г®Г§ДџГ Г±ГІ: %d Г«ГҐГІ\n", age);
 }
