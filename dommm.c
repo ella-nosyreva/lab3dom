@@ -8,7 +8,7 @@ void task_10();
 int main() {
     setlocale(LC_CTYPE, "RUS");
     task_10();
-    system("pause"); // çàäåğæêè ıêğàíà
+    system("pause");
     return 0;
 }
 
@@ -17,10 +17,10 @@ void task_10() {
     int curr_day, curr_month, curr_year;
     int age;
 
-    puts("Ââåäèòå äàòó ğîæäåíèÿ (ÄÄ ÌÌ ÃÃÃÃ):");
+    puts("Введите дату рождения (ДД ММ ГГГГ):");
     scanf("%d %d %d", &birth_day, &birth_month, &birth_year);
 
-    puts("Ââåäèòå òåêóùóş äàòó (ÄÄ ÌÌ ÃÃÃÃ):");
+    puts("Введите текущую дату (ДД ММ ГГГГ):");
     scanf("%d %d %d", &curr_day, &curr_month, &curr_year);
 
     age = curr_year - birth_year;
@@ -29,5 +29,5 @@ void task_10() {
         age = age - 1;
     }
 
-    printf("Âîçğàñò: %d ëåò\n", age);
+    printf("Возраст: %d лет\n", age);
 }
