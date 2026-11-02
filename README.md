@@ -24,41 +24,9 @@
 <img width="453" height="653" alt="Диаграмма без названия drawio (5)" src="https://github.com/user-attachments/assets/da44daf3-668b-42f7-9d28-316dca3c78e7" />
 
 ## 2. Реализация программы
-```
-#define _CRT_SECURE_NO_DEPRECATE
-#include <stdio.h>
-#include <stdlib.h>
-#include <locale.h>
 
-void task_10();
+Исходный код программы: [dommm.c](dommm.c)
 
-int main() {
-    setlocale(LC_CTYPE, "RUS");
-    task_10();
-    system("pause");
-    return 0;
-}
-
-void task_10() {
-    int birth_day, birth_month, birth_year;
-    int curr_day, curr_month, curr_year;
-    int age;
-
-    puts("Введите дату рождения (ДД ММ ГГГГ):");
-    scanf("%d %d %d", &birth_day, &birth_month, &birth_year);
-
-    puts("Введите текущую дату (ДД ММ ГГГГ):");
-    scanf("%d %d %d", &curr_day, &curr_month, &curr_year);
-
-    age = curr_year - birth_year;
-
-    if (curr_month < birth_month || (curr_month == birth_month && curr_day < birth_day)) {
-        age = age - 1;
-    }
-
-    printf("Возраст: %d лет\n", age);
-}
-```
 ## 3. Результаты работы программы
 
 <img width="534" height="137" alt="image" src="https://github.com/user-attachments/assets/5e809e4d-b4f4-4864-83bc-88c104edd3ba" />
